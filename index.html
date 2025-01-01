@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raisin Delight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpeg') no-repeat center center fixed; /* Add background image */
+            background-size: cover; /* Ensure the background image covers the entire screen */
+        }
+
+        header {
+            background-color: rgba(141, 85, 36, 0.9); /* Warm brown with slight transparency */
+            color: #FFF8E7; /* Soft cream tone */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(191, 144, 72, 0.9); /* Golden brown tone */
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #FFF8E7;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for each product */
+        .product {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border: 1px solid #D4C5A8; /* Light brown border */
+            border-radius: 8px; 
+            overflow: hidden;
+            margin: 20px;
+            padding: 20px;
+            background-color: #FFF8E7;
+        }
+
+        .product img {
+            width: 250px; /* Set a fixed width */
+            height: 250px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image fills the space without distortion */
+            margin-right: 20px; /* Adds space between the image and text */
+            border-radius: 8px; /* Optional: Add rounded corners for aesthetic */
+        }
+
+        .product .product-info {
+            flex-grow: 1; /* Take up remaining space */
+        }
+
+        .product h3 {
+            color: #8D5524; /* Warm raisin-inspired brown */
+        }
+
+        .product p {
+            color: #3B3B3B; /* Dark grey text for the description */
+            font-size: 16px;
+        }
+
+        .product ul {
+            color: #8D5524;
+            font-size: 16px;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: rgba(141, 85, 36, 0.9);
+            color: #FFF8E7;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Contact Info Section Styling */
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFF8E7;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #D4C5A8;
+            text-align: left; /* Left-align the contact info */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info h2 {
+            color: #8D5524; /* Warm raisin-inspired brown */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info .left, .contact-info .right {
+            width: 45%;
+        }
+
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .contact-info li {
+            margin: 15px 0;
+        }
+
+        .contact-info a {
+            color: #8D5524; /* Brown color for links */
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info address {
+            font-style: normal;
+            color: #3B3B3B;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column; /* Stack image and text on top of each other */
+                text-align: center;
+            }
+
+            .product img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            }
+
+            .product-info {
+                text-align: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .contact-info .left, .contact-info .right {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to GEETAI EXIM</h1>
+        <p>Your one-stop shop for premium quality raisins!</p>
+    </header>
+
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container" id="products">
+        <h2>Our Raisins</h2>
+
+        <!-- New Product: Malayar Raisins -->
+        <div class="product">
+            <img src="Malayar_Raisins.jpeg" alt="Malayar Raisins">
+            <div class="product-info">
+                <h3>Malayar Raisins</h3>
+                <p>Malayar Raisins are known for their unique sweetness and texture. They come in three premium varieties that cater to different tastes and preferences.</p>
+                <ul>
+                    <li><strong>A</strong>: A basic variety with a mild, sweet taste, perfect for everyday snacking.</li>
+                    <li><strong>AA</strong>: A higher quality raisin with a deeper flavor and more succulent texture.</li>
+                    <li><strong>AAA</strong>: The top-tier variety, offering the sweetest and juiciest raisins with a tender bite.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="golden-raisins.jpg" alt="Golden Raisins">
+            <div class="product-info">
+                <h3>Golden Raisins</h3>
+                <p>Sweet and juicy golden raisins, perfect for snacking or baking. Rich in vitamins and minerals, they provide a healthy treat for any occasion.</p>
+                <ul>
+                    <li>Golden Sangli AAA: The best quality, naturally sweet and tender.</li>
+                    <li>Golden Sangli Long: A longer variant, sweet with a slightly tangy taste.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="black-raisins.jpg" alt="Black Raisins">
+            <div class="product-info">
+                <h3>Black Raisins</h3>
+                <p>Rich in flavor and packed with nutrients, black raisins are a great addition to any diet. Known for their antioxidant properties, they support overall health.</p>
+                <ul>
+                    <li>Dried Black: These raisins are dried to perfection, offering a deep, intense flavor and a chewy texture.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="green-raisins.jpg" alt="Green Raisins">
+            <div class="product-info">
+                <h3>Green Raisins</h3>
+                <p>Tangy and delicious, green raisins offer a unique taste. They are a great source of fiber and are known for their digestive benefits.</p>
+                <ul>
+                    <li>Long Green: A long variety of green raisins with a mild tartness, ideal for snacking or adding to dishes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section with Links -->
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="left">
+                <ul>
+                    <li><strong>Email:</strong> <a href="bhosalevikramsinh95@gmail.com">bhosalevikramsinh95@gmail.com</a></li>
+                    <li><strong>Phone:</strong> +91 7758800799</li>
+                    <li><strong>Facebook:</strong> <a href="https://www.facebook.com/genericfacebook" target="_blank">facebook.com/genericfacebook</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/geetai-exim/posts/?feedView=all" target="_blank">https://www.linkedin.com/company/geetai-exim/posts/?feedView=all</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <address>
+                    <strong>Our Address:</strong><br>
+                    Renuka colony, Tal, near Yogi Corporation, <br>
+                    MIDC Kupwad, Bamnoli, Miraj, <br>
+                    Maharashtra 416436, India
+                </address>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GEETAI EXIM. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
